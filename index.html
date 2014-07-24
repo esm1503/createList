@@ -3,25 +3,42 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-<div id="header">
-    <h1>Favorites <span>make a list</span></h1>
-</div>
-<!--end header-->
+
 <div id="container">
+    <div id="header">
+        <h1>Favorites <span>make a list</span></h1>
+    </div>
+    <!--end header-->
     <div id="col1">
         <form>
 
                 <span class="form">Type</span>
-            <br><input type="radio" name="group1" value="Book"> Book
+            <br>
+            <input type="radio" name="group1" value="Book"> Book
                 <input type="radio" name="group1" value="Movie"> Movie<br>
                <span class="form">Title</span>
-            <br><input type="text" name="title"><br>
-                <span class="form">Link</span> <span>(optional)</span> <br>
+            <br>
+            <input type="text" name="title"><br>
+                <span class="form">Link</span> <span>(optional)</span>
+            <br>
             <input type="text" name="link"><br>
-                <span class="form">Image Link</span> <span>(optional)</span> <br>
+                <span class="form">Image Link</span> <span>(optional)</span>
+            <br>
             <input type="text" name="image">
+            <br>
+            <span class="form">Rating</span>
+            <br>
+
+            <div class="cir"></div>
+            <div class="cir"></div>
+            <div class="cir"></div>
+            <div class="cir"></div>
+            <div class="cir"></div>
+            
+            <br> <button id="add">Add</button>
 
         </form>
 
@@ -30,13 +47,17 @@
 
     <div id="col2">
         <table>
-            <th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            </th>
+            <thead>
+            <tr>
+            <th>Type</th>
+            <th>Image</th>
+            <th>Title</th>
+            <th>Rating</th>
+            <th>Date Added</th>
+            </tr>
+            </thead>
+
+
             <tr>
                 <td></td>
                 <td></td>

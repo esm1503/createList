@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#header {
+    width: 825px;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 10px;
+    -webkit-box-shadow: 3px 3px 6px -3px gray;
+
+}
+
+h1 span {
+    font-size: 18px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 835px;
+
+}
+
+#col1 {
+    width: 295px;
+    height: 500px;
+    padding-top: 15px;
+    padding-left: 15px;
+    -webkit-box-shadow: 3px 3px 6px -3px gray;
+}
+
+.cir {
+    background-color: #fff;
+    height: 20px;
+    -moz-border-radius:10px;
+    -webkit-border-radius: 10px;
+    width: 20px;
+    display: inline-block;
+    margin: 2px;
+    border: 1px solid black;
+}
+
+.cir:hover {
+    background-color: gold;
+}
+
+#col2 {
+    width: 480px;
+    height: 500px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: right;
+    margin-top: -515px;
+    -webkit-box-shadow: 3px 3px 6px -3px gray;
+}
+
+table {
+    width: 480px;
+}
+
+table th:last-child {
+    width: 75px;
+}
+
+table th:first-child {
+    width: 45px;
+}
+
+table th:nth-child(2) {
+    width: 70px;
+}
+
+table th:nth-child(3) {
+    width: 135px;
+}
+
+table thead tr th {
+    font-size: 12px;
+    font-weight: 100;
+    border-bottom: 1px solid gainsboro;
+
+}
