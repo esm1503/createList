@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="css/style.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -32,12 +33,13 @@
             <span class="form">Rating</span>
             <br>
 
-            <div class="cir"></div>
-            <div class="cir"></div>
-            <div class="cir"></div>
-            <div class="cir"></div>
-            <div class="cir"></div>
-            
+
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+
             <br> <button id="add">Add</button>
 
         </form>
@@ -86,6 +88,36 @@
 
 </div>
 <!--end container-->
+
+
+<script>
+    $(function() {
+        $('.star').mouseover(function() {
+            $(this).addClass('star_hover');
+            $(this).prevAll('.star').addClass('star_hover');
+        });
+
+        $('.star').mouseout(function() {
+            $(this).removeClass('star_hover');
+            $(this).prevAll('.star').removeClass('star_hover');
+        });
+
+        $('.star').click(function() {
+            $(this).addClass('star_rated');
+            $(this).prevAll('.star').addClass('star_rated');
+        });
+
+        $('.star_rated').click(function() {
+            $(this).addClass('star_off');
+            $(this).prevAll('.star_rated').addClass('star_off');
+        });
+
+    });
+
+
+
+</script>
+
 
 </body>
 </html>

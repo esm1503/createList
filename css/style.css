@@ -35,7 +35,7 @@ h1 span {
     -webkit-box-shadow: 3px 3px 6px -3px gray;
 }
 
-.cir {
+.star {
     background-color: #fff;
     height: 20px;
     -moz-border-radius:10px;
@@ -46,7 +46,11 @@ h1 span {
     border: 1px solid black;
 }
 
-.cir:hover {
+.star_off {
+    background-color: #fff;
+}
+
+.star_hover, .star_rated {
     background-color: gold;
 }
 
